@@ -2,8 +2,8 @@
 
 Gool::Gool()
 {
-	X = 9;
-	Y = 9;
+	X = 8;
+	Y = 8;
 }
 
 Gool::~Gool()

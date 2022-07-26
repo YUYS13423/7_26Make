@@ -18,17 +18,44 @@ using namespace std;
 int main() 
 {
 	vector<Character*> MyCharacters;
-
+	Gool gool;
 	MyCharacters.push_back(new Player());
 	MyCharacters.push_back(new Monster());
 
-
+	int randmove;
 	bool bIsRunning = true;
 
 	while (bIsRunning) 
 	{
 		int KeyCode = _getch();
-		Gool gool;
+		if (KeyCode == 'p' || KeyCode == 'P')
+		{
+			bIsRunning = false;
+		}
+
+		MyCharacters[0]->Move(KeyCode,MyCharacters[0]);
+		int Type = (rand() % 4);
+			if (Type == 0)
+			{
+				randmove='w';
+			}
+			else if (Type == 1)
+			{
+				randmove = 'a';
+			}
+			else if (Type == 2)
+			{
+				randmove = 's';
+			}
+			else if (Type == 3)
+			{
+				randmove = 'd';
+			}
+
+			MyCharacters[1]->Move(randmove, MyCharacters[1]);
+
+
+
 
 		system("cls");
 

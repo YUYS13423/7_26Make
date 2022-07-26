@@ -1,2 +1,2 @@
 #pragma once
-void Draw();
+void Draw(Character* MyPlayer, Character* Monster);

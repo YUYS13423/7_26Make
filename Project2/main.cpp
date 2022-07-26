@@ -8,7 +8,9 @@
 #include <stack>
 #include <map>
 #include <set>
-
+#include "Input.h"
+#include "Process.h"
+#include "Draw.h"
 
 using namespace std;
 
@@ -24,22 +26,15 @@ int main()
 
 	while (bIsRunning) // My engine
 	{
-		int KeyCode = _getch();
-		if (KeyCode == 'Q' || KeyCode == 'q')
-		{
-			bIsRunning = false;
-		}
+		int KeyCode = Input();
 
-		vector<Character*> MyCharacters;
+		Process(KeyCode,MyCharacters[0], MyCharacters[1]);
+		Draw(MyCharacters[0], MyCharacters[1]);
 
-		for (int i = 0; i < MyCharacters.size(); ++i)
-		{
-			MyCharacters[i]->Move();
-		}
-
-		delete MyCharacters[0];
 	}
-	
+
+	vector<Character*> MyCharacters;
+		delete MyCharacters[0];
 
 
 

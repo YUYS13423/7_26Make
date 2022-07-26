@@ -5,38 +5,36 @@
 #include <iostream>
 #include "Map.h"
 #include "Monster.h"
-#include "Gold.h"
+#include "Gool.h"
 
-void Draw()
+using namespace std;
+
+
+void Draw(Character* MyPlayer, Character* Monster)
 {
-	void Draw()
+	system("cls");
+
+	for (int Y = 0; Y < 10; ++Y)
 	{
-		system("cls");
-
-		for (int Y = 0; Y < 10; ++Y)
+		for (int X = 0; X < 10; ++X)
 		{
-			for (int X = 0; X < 10; ++X)
+			if (X == MyPlayer->X && Y == MyPlayer->Y)
 			{
-				if (X == MyPlayer->X && Y == MyPlayer->Y)
-				{
-					cout << 'P';
-				}
-				else if (X == MyPlayer->X && Y == MyPlayer->Y)
-				{
-					cout << 'M';
-				}
-				else if (X == MyGold->X && Y == MyPlayer->Y)
-				{
-					cout << 'G';
-				}
-				else
-				{
-					cout << Map[Y][X];
-				}
-				cout << ' ';
+				cout << 'P';
 			}
-			cout << endl;
+			else if (X == Monster->X && Y == Monster->Y)
+			{
+				cout << 'M';
+			}
+			
+			else
+			{
+				cout << Map1[Y][X];
+			}
+			cout << ' ';
 		}
-
+		cout << endl;
 	}
+
 }
+

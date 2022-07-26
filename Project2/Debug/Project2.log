@@ -1,1 +1,21 @@
-﻿
+﻿  Draw.cpp
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2,6): error C2182: 'Draw': 'void' 형식을 잘못 사용했습니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2,11): error C2065: 'Character': 선언되지 않은 식별자입니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2,22): error C2065: 'MyPlayer': 선언되지 않은 식별자입니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2,32): error C2065: 'Character': 선언되지 않은 식별자입니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2,43): error C2065: 'Monster': 선언되지 않은 식별자입니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.cpp(13,6): error C2365: 'Draw': 재정의: 이전 정의는 '데이터 변수'입니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Draw.h(2): message : 'Draw' 선언을 참조하십시오.
+  main.cpp
+C:\work\my\c++\7_26\7_26Make\Project2\main.cpp(21,37): error C2248: 'Player::Player': private 멤버('Player' 클래스에서 선언)에 액세스할 수 없습니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Player.h(6): message : 'Player::Player' 선언을 참조하십시오.
+C:\work\my\c++\7_26\7_26Make\Project2\Player.h(4): message : 'Player' 선언을 참조하십시오.
+C:\work\my\c++\7_26\7_26Make\Project2\main.cpp(22,38): error C2248: 'Monster::Monster': private 멤버('Monster' 클래스에서 선언)에 액세스할 수 없습니다.
+C:\work\my\c++\7_26\7_26Make\Project2\Monster.h(6): message : 'Monster::Monster' 선언을 참조하십시오.
+C:\work\my\c++\7_26\7_26Make\Project2\Monster.h(4): message : 'Monster' 선언을 참조하십시오.
+C:\work\my\c++\7_26\7_26Make\Project2\main.cpp(36,21): error C2086: 'std::vector<Character *,std::allocator<Character *>> MyCharacters': 재정의
+C:\work\my\c++\7_26\7_26Make\Project2\main.cpp(19): message : 'MyCharacters' 선언을 참조하십시오.
+  Map.cpp
+  Process.cpp
+C:\work\my\c++\7_26\7_26Make\Project2\Process.h(3,27): error C2061: 구문 오류: 식별자 'Character'
+  코드를 생성하고 있습니다...
